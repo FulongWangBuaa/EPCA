@@ -1,5 +1,5 @@
 # Overview
-`EPCA` is used for enhancing individual calibration classification in SSVER-based BCI.
+`EPCA (Exactly Periodic Component Analysis)` is used for enhancing individual calibration classification in SSVER-based BCI.
 
 Implementation code for the `EPCA` method is provided here.
 
