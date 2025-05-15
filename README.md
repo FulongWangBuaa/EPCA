@@ -8,7 +8,7 @@ Implementation code for the `EPCA` method is provided here.
 This project depends on the SSVEPAnalysisToolbox Python package, which can be installed following the instructions available at: [https://ssvep-analysis-toolbox.readthedocs.io/en/latest/Installation\_pages/Installation.html](https://ssvep-analysis-toolbox.readthedocs.io/en/latest/Installation_pages/Installation.html)
 
 # Dataset
-The benchmark dataset can be accessed at: [https://bci.med.tsinghua.edu.cn/download.html](https://bci.med.tsinghua.edu.cn/download.html)
+The `Benchmark` dataset can be accessed at: [https://bci.med.tsinghua.edu.cn/download.html](https://bci.med.tsinghua.edu.cn/download.html)
 
 
 
