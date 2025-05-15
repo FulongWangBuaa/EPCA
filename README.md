@@ -15,12 +15,12 @@ The `Benchmark` dataset can be accessed at: [https://bci.med.tsinghua.edu.cn/dow
 ## Note
 - The file `trca.py` is a Python implementation of the `TRCA` [1] , `ms-TRCA`[2] ,`eTRCA` and `ms-eTRCA` method.
 - The file `ress.py` is a Python implementation of the `RESS` [3] and `eRESS` method.
-- The file `epca.py` is a Python implementation of the `EPCA` and `eEPCA` method.
+- The file `epca.py` is a Python implementation of the `EPCA` and `eEPCA` method. (The code will be released upon acceptance of the paper.)
 
 # Cite
 If you use any part of the code, please cite the following publication:
 
-- 
+- ...
 
 # Acknowledgements
 - [1] Nakanishi M, Wang Y, Chen X, et al. Enhancing Detection of SSVEPs for a High-Speed Brain Speller Using Task-Related Component Analysis[J]. IEEE Transactions on Biomedical Engineering, 2018, 65(1): 104-112.[DOI: 10.1109/TBME.2017.2694818](10.1109/TBME.2017.2694818)
