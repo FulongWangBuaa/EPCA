@@ -11,11 +11,12 @@ import warnings
 
 import numpy as np
 
-from .basemodel import BaseModel
-from .utils import (
+from SSVEPAnalysisToolbox.algorithms.basemodel import BaseModel
+from SSVEPAnalysisToolbox.algorithms.utils import (
     gen_template, sort, canoncorr, separate_trainSig, qr_list, blkrep, eigvec, cholesky,
     inv, repmat
 )
+
 
 def _sscor_cal_U(X_single_stimulus : ndarray,
                  n_component : int):
