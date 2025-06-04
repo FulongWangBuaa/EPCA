@@ -29,7 +29,7 @@ model = RESS(stim_freqs=stim_freqs,srate=srate,weights_filterbank=weights_filter
 model = TRCA(weights_filterbank=weights_filterbank)
 
 # X_train: List[]   y_train:List[]
-modef.fit(X_train,y_train)
+model.fit(X_train,y_train)
 
 # X_test: List[]
 Y_pred = model.predict(X_test)
@@ -46,7 +46,7 @@ model = ERESS(stim_freqs=stim_freqs,srate=srate,weights_filterbank=weights_filte
 model = ETRCA(weights_filterbank=weights_filterbank)
 
 # X_train: List[]   y_train:List[]
-modef.fit(X_train,y_train)
+model.fit(X_train,y_train)
 
 # X_test: List[]
 Y_pred = model.predict(X_test)
