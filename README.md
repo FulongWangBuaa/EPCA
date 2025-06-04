@@ -13,10 +13,10 @@ The `Benchmark` dataset can be accessed at: [https://bci.med.tsinghua.edu.cn/dow
 
 
 # Note
-- The file `trca.py` is a Python implementation of the `TRCA` [1] , `ms-TRCA`[2] ,`eTRCA` and `ms-eTRCA` method.
-- The file `ress.py` is a Python implementation of the `RESS` [3] and `eRESS` method.
-- The file `prca.py` is a Python implementation of the `PRCA` [5] and `ePRCA` method.
-- The file `epca.py` is a Python implementation of the `EPCA` and `eEPCA` method. (The code will be released upon acceptance of the paper.)
+- The file `trca.py` is a Python implementation of the `TRCA (Task-Related Component Analysis)` [1] , `ms-TRCA`[2] ,`eTRCA` and `ms-eTRCA` method.
+- The file `ress.py` is a Python implementation of the `RESS (Rhythmic Entrainment Source Separation)` [3] and `eRESS` method.
+- The file `prca.py` is a Python implementation of the `PRCA (Periodically Repeated Component Analysis)` [5] and `ePRCA` method.
+- The file `epca.py` is a Python implementation of the `EPCA (Exactly Periodic Component Analysis)` and `eEPCA` method. (The code will be released upon acceptance of the paper.)
 
 # Usage Example
 ```python
