@@ -12,12 +12,12 @@ The `Benchmark` dataset can be accessed at: [https://bci.med.tsinghua.edu.cn/dow
 
 
 
-## Note
+# Note
 - The file `trca.py` is a Python implementation of the `TRCA` [1] , `ms-TRCA`[2] ,`eTRCA` and `ms-eTRCA` method.
 - The file `ress.py` is a Python implementation of the `RESS` [3] and `eRESS` method.
 - The file `epca.py` is a Python implementation of the `EPCA` and `eEPCA` method. (The code will be released upon acceptance of the paper.)
 
-## Usage Example
+# Usage Example
 ```python
 # EPCA, RESS, TRCA
 from epca import EPCA
