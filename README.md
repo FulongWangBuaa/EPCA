@@ -36,7 +36,7 @@ Y_pred = model.predict(X_test)
 ```
 
 ```python
-# eEPCA
+# eEPCA, eRESS, eTRCA
 from epca import EEPCA
 from ress import ERESS
 from trca import ETRCA
