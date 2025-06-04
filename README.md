@@ -19,9 +19,15 @@ The `Benchmark` dataset can be accessed at: [https://bci.med.tsinghua.edu.cn/dow
 
 ## Usage Example
 ```python
-# EPCA
+# EPCA, RESS, TRCA
 from epca import EPCA
+from ress import RESS
+from trca import TRCA
 model = EPCA(stim_freqs=stim_freqs,srate=srate,weights_filterbank=weights_filterbank)
+model = RESS(stim_freqs=stim_freqs,srate=srate,weights_filterbank=weights_filterbank,
+             ress_param={'peakwidt':0.75, 'neighfreq':3, 'neighwidt':3})
+model = TRCA(weights_filterbank=weights_filterbank)
+
 # X_train: List[]   y_train:List[]
 modef.fit(X_train,y_train)
 
@@ -32,7 +38,13 @@ Y_pred = model.predict(X_test)
 ```python
 # eEPCA
 from epca import EEPCA
+from ress import ERESS
+from trca import ETRCA
 model = EEPCA(stim_freqs=stim_freqs,srate=srate,weights_filterbank=weights_filterbank)
+model = ERESS(stim_freqs=stim_freqs,srate=srate,weights_filterbank=weights_filterbank,
+             ress_param={'peakwidt':0.75, 'neighfreq':3, 'neighwidt':3})
+model = ETRCA(weights_filterbank=weights_filterbank)
+
 # X_train: List[]   y_train:List[]
 modef.fit(X_train,y_train)
 
