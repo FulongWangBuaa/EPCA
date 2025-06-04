@@ -17,6 +17,29 @@ The `Benchmark` dataset can be accessed at: [https://bci.med.tsinghua.edu.cn/dow
 - The file `ress.py` is a Python implementation of the `RESS` [3] and `eRESS` method.
 - The file `epca.py` is a Python implementation of the `EPCA` and `eEPCA` method. (The code will be released upon acceptance of the paper.)
 
+## Usage Example
+```python
+# EPCA
+from epca import EPCA
+model = EPCA(stim_freqs=stim_freqs,srate=srate,weights_filterbank=weights_filterbank)
+# X_train: List[]   y_train:List[]
+modef.fit(X_train,y_train)
+
+# X_test: List[]
+Y_pred = model.predict(X_test)
+```
+
+```python
+# eEPCA
+from epca import EEPCA
+model = EEPCA(stim_freqs=stim_freqs,srate=srate,weights_filterbank=weights_filterbank)
+# X_train: List[]   y_train:List[]
+modef.fit(X_train,y_train)
+
+# X_test: List[]
+Y_pred = model.predict(X_test)
+```
+
 # Cite
 If you use any part of the code, please cite the following publication:
 
