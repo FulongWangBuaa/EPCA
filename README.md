@@ -65,12 +65,15 @@ This repository includes Python implementations of several SSVER decoding method
 
 ## 5. Usage Examples
 
-### Standard Methods (EPCA / RESS / PRCA / TRCA)
+### Standard Methods (FBCCA / EPCA / RESS / TDCA / TRCA)
 ```python
-from epca import EPCA
+from cca import FBCCA
 from ress import RESS
-from prca import PRCA
+from prca import TDCA
 from trca import TRCA
+from epca import EPCA
+
+model = FBCCA(weights_filterbank=weights_filterbank)
 
 model = EPCA(
     stim_freqs=stim_freqs,
@@ -85,11 +88,7 @@ model = RESS(
     ress_param={'peakwidt': 0.75, 'neighfreq': 3, 'neighwidt': 3}
 )
 
-model = PRCA(
-    stim_freqs=stim_freqs,
-    srate=srate,
-    weights_filterbank=weights_filterbank
-)
+model = TDCA(n_component=8, padding_len=5)
 
 model = TRCA(weights_filterbank=weights_filterbank)
 
@@ -101,12 +100,11 @@ model.fit(X_train, y_train)
 Y_pred = model.predict(X_test)
 ```
 
-### Enhanced Methods (eEPCA / eRESS / ePRCA / eTRCA)
+### Enhanced Methods (eEPCA / eRESS / eTRCA / ms-eTRCA)
 ```python
 from epca import EEPCA
 from ress import ERESS
-from prca import EPRCA
-from trca import ETRCA
+from trca import ETRCA, MSETRCA
 
 model = EEPCA(
     stim_freqs=stim_freqs,
@@ -121,11 +119,7 @@ model = ERESS(
     ress_param={'peakwidt': 0.75, 'neighfreq': 3, 'neighwidt': 3}
 )
 
-model = EPRCA(
-    stim_freqs=stim_freqs,
-    srate=srate,
-    weights_filterbank=weights_filterbank
-)
+model = MSETRCA(n_neighbor=2, weights_filterbank = weights_filterbank)
 
 model = ETRCA(weights_filterbank=weights_filterbank)
 
