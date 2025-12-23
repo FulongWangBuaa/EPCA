@@ -51,7 +51,7 @@ This repository includes Python implementations of several SSVER decoding method
   Implementation of TDCA (Task Discriminant Component Analysis) and ePRCA.
 
 - **./my_code/algorithms/epca.py**  
-  Implementation of EPCA (Exactly Periodic Component Analysis) and eEPCA.  
+  Implementation of EPCA (Exactly Periodic Component Analysis) and eEPCA.
 
 ---
 
