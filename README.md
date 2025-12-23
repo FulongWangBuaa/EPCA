@@ -52,7 +52,6 @@ This repository includes Python implementations of several SSVER decoding method
 
 - **./my_code/algorithms/epca.py**  
   Implementation of EPCA (Exactly Periodic Component Analysis) and eEPCA.  
-  *(The EPCA/eEPCA code will be released upon acceptance of the paper.)*
 
 ---
 
