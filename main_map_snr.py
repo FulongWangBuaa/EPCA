@@ -33,19 +33,19 @@ from my_code.utils.megpreprocess import preprocess as megpreprocess
 dataset_key = 'MEG'
 
 if dataset_key == 'Benchmark':
-    data_path = r"D:\科研\代码\工作\5、EPCA\EPCA-R1\datasets\Benchmark"
+    data_path = r".\datasets\Benchmark"
     dataset = MyBenchmarkDataset(path=data_path)
 elif dataset_key == 'BETA':
-    data_path = r"D:\科研\代码\工作\5、EPCA\EPCA-R1\datasets\BETA"
+    data_path = r".\datasets\BETA"
     dataset = MyBetaDataset(path=data_path)
 elif dataset_key == 'eldBETA':
-    data_path = r"D:\科研\代码\工作\5、EPCA\EPCA-R1\datasets\eldBETA"
+    data_path = r".\datasets\eldBETA"
     dataset = MyeldBetaDataset(path=data_path)
 elif dataset_key == 'GuHF':
-    data_path = r"D:\科研\代码\工作\5、EPCA\EPCA-R1\datasets\GuHF"
+    data_path = r".\datasets\GuHF"
     dataset = MyGuHFDataset(path=data_path)
 elif dataset_key == 'MEG':
-    data_path = r"D:\科研\代码\工作\5、EPCA\EPCA-R1\datasets\OPMMEG"
+    data_path = r".\datasets\OPMMEG"
     dataset = MyMEGDataset(path=data_path)
 
 from my_code.utils.utils import bandpass_filter
@@ -1278,3 +1278,4 @@ with open(f'./result_R1/maps/SNRs/SNR_test_{method}_{dataset_key}.pkl','wb') as 
 
 
 # %%
+
