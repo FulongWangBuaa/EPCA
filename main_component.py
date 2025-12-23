@@ -36,27 +36,27 @@ from my_code.utils.guhfpreprocess import filterbank as guhffilterbank
 dataset_key = 'Benchmark'
 
 if dataset_key == 'Benchmark':
-    data_path = r"D:\科研\代码\工作\5、EPCA\EPCA-R1\datasets\Benchmark"
+    data_path = r"./datasets/Benchmark"
     dataset = MyBenchmarkDataset(path=data_path)
     dataset.regist_preprocess(benchmarkpreprocess)
     dataset.regist_filterbank(benchmarkfilterbank)
 elif dataset_key == 'MEG':
-    data_path = r"D:\科研\代码\工作\5、EPCA\EPCA-R1\datasets\OPMMEG"
+    data_path = r"./datasets/OPMMEG"
     dataset = MyMEGDataset(path=data_path)
     dataset.regist_preprocess(megpreprocess)
     dataset.regist_filterbank(megfilterbank)
 elif dataset_key == 'BETA':
-    data_path = r"D:\科研\代码\工作\5、EPCA\EPCA-R1\datasets\BETA"
+    data_path = r"./datasets/BETA"
     dataset = MyBetaDataset(path=data_path)
     dataset.regist_preprocess(betapreprocess)
     dataset.regist_filterbank(betafilterbank)
 elif dataset_key == 'eldBETA':
-    data_path = r"D:\科研\代码\工作\5、EPCA\EPCA-R1\datasets\eldBETA"
+    data_path = r"./datasets/eldBETA"
     dataset = MyeldBetaDataset(path=data_path)
     dataset.regist_preprocess(eldbetapreprocess)
     dataset.regist_filterbank(eldbetafilterbank)
 elif dataset_key == 'GuHF':
-    data_path = r"D:\科研\代码\工作\5、EPCA\EPCA-R1\datasets\GuHF"
+    data_path = r"./datasets/GuHF"
     dataset = MyGuHFDataset(path=data_path)
     dataset.regist_preprocess(guhfpreprocess)
     dataset.regist_filterbank(guhffilterbank)
@@ -162,21 +162,21 @@ from SSVEPAnalysisToolbox.evaluator import (
 # acc_store shape: (num_models, num_subs, num_tw)
 from my_code.evaluator.MyBaseEvaluator import BaseEvaluator
 evaluator = BaseEvaluator()
-evaluator.load(r"D:\科研\代码\工作\5、EPCA\EPCA-R1\result_R1\evaluator_component\evaluator_component_Benchmark_1_5_1.pkl")
+evaluator.load(r"./result_R1/evaluator_component/evaluator_component_Benchmark_1_5_1.pkl")
 acc_store1, itr_store = cal_performance_onedataset_individual_diffsiglen(evaluator = evaluator,
                                                                          dataset_idx = 0,
                                                                          tw_seq = [1],
                                                                          train_or_test = 'test')
 
 evaluator = BaseEvaluator()
-evaluator.load(r"D:\科研\代码\工作\5、EPCA\EPCA-R1\result_R1\evaluator_component\evaluator_component_Benchmark_2_5_1.pkl")
+evaluator.load(r"./evaluator_component/evaluator_component_Benchmark_2_5_1.pkl")
 acc_store2, itr_store = cal_performance_onedataset_individual_diffsiglen(evaluator = evaluator,
                                                                          dataset_idx = 0,
                                                                          tw_seq = [1],
                                                                          train_or_test = 'test')
 
 evaluator = BaseEvaluator()
-evaluator.load(r"D:\科研\代码\工作\5、EPCA\EPCA-R1\result_R1\evaluator_component\evaluator_component_Benchmark_3_5_1.pkl")
+evaluator.load(r"./evaluator_component/evaluator_component_Benchmark_3_5_1.pkl")
 acc_store3, itr_store = cal_performance_onedataset_individual_diffsiglen(evaluator = evaluator,
                                                                          dataset_idx = 0,
                                                                          tw_seq = [1],
@@ -210,7 +210,7 @@ for dataset_idx, dataset_key in enumerate(tqdm(datasets)):
                 tw = tw_seqs[tw_idx]
 
                 evaluator = BaseEvaluator()
-                evaluator.load(f'G:/EPCA/EPCA-R1/result_R1/evaluator_component/evaluator_component_{dataset_key}_{num_component}_{num_trains}_{tw}.pkl')
+                evaluator.load(f'./result_R1/evaluator_component/evaluator_component_{dataset_key}_{num_component}_{num_trains}_{tw}.pkl')
                 trial_container = evaluator.trial_container
                 performance_container = evaluator.performance_container
                 for sub_idx in range(num_subs):
@@ -245,3 +245,4 @@ with open('component_trial_tw_all_true.pkl','wb') as f:
 
 
 # %%
+
