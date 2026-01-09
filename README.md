@@ -39,7 +39,7 @@ The following datasets are used in this study:
   https://doi.org/10.6084/m9.figshare.23641092
 
 - **OPMMEG dataset (Dataset V)**  
-  The OPMMEG dataset will be made available by the corresponding author upon reasonable request after publication.
+  The OPMMEG dataset will be made available by the corresponding author upon reasonable request.
 
 ---
 
