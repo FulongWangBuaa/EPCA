@@ -120,9 +120,12 @@ model = ERESS(
 )
 
 model = MSETRCA(n_neighbor=2, weights_filterbank = weights_filterbank)
-
 model = ETRCA(weights_filterbank=weights_filterbank)
+
+model.fit(X_train, y_train)
+Y_pred = model.predict(X_test)
 ```
+
 ### Cite
 If you use any part of the code, please cite the following publication:
 
@@ -137,6 +140,4 @@ If you use any part of the code, please cite the following publication:
 - [6] Muresan D D, Parks T W. Orthogonal, exactly periodic subspace decomposition[J]. IEEE Transactions on Signal Processing, 2003, 51(9): 2270-2279. [DOI: 10.1109/TSP.2003.815381](10.1109/TSP.2003.815381)
 - [7] Wang Y, Chen X, Gao X, et al. A Benchmark Dataset for SSVEP-Based Brain–Computer Interfaces[J]. IEEE Transactions on Neural Systems and Rehabilitation Engineering, 2017, 25(10): 1746-1752.[DOI: 10.1109/TNSRE.2016.2627556](10.1109/TNSRE.2016.2627556)
 
-model.fit(X_train, y_train)
-Y_pred = model.predict(X_test)
-```
+
