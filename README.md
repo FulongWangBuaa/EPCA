@@ -126,12 +126,13 @@ model.fit(X_train, y_train)
 Y_pred = model.predict(X_test)
 ```
 
-### Cite
+## 6. Cite
+
 If you use any part of the code, please cite the following publication:
 
 - [1] Wang F, Cao F, Yang J, et al. Enhancing Individual Calibration Classification in SSVER Based BCI with Exactly Periodic Component Analysis[J]. IEEE Transactions on Industrial Informatics, 2026.
 
-### Acknowledgements
+## 7. Acknowledgements
 - [1] Nakanishi M, Wang Y, Chen X, et al. Enhancing Detection of SSVEPs for a High-Speed Brain Speller Using Task-Related Component Analysis[J]. IEEE Transactions on Biomedical Engineering, 2018, 65(1): 104-112.[DOI: 10.1109/TBME.2017.2694818](10.1109/TBME.2017.2694818)
 - [2] Wong C M, Wan F, Wang B, et al. Learning across multi-stimulus enhances target recognition methods in SSVEP-based BCIs[J]. Journal of Neural Engineering, 2020, 17(1): 016026.[DOI: 10.1088/1741-2552/ab2373](10.1088/1741-2552/ab2373)
 - [3] Xu W, Ke Y, Ming D. Improving the Performance of Individually Calibrated SSVEP Classification by Rhythmic Entrainment Source Separation[J]. IEEE Transactions on Neural Systems and Rehabilitation Engineering, 2024: 1-1.[DOI: 10.1109/TNSRE.2024.3503772](10.1109/TNSRE.2024.3503772)
