@@ -3,7 +3,7 @@
 ## 1. Overview
 **Exactly Periodic Component Analysis (EPCA)** is a signal processing method designed to enhance **individual calibration and classification performance** in **SSVER-based brain–computer interfaces (BCIs)**.
 
-This repository provides the **implementation code** for EPCA and several representative SSVER decoding methods used for comparison, enabling reproducibility of the experimental results reported in the associated paper: Wang F, Cao F, Yang J, et al. Enhancing Individual Calibration Classification in SSVER Based BCI with Exactly Periodic Component Analysis[J]. IEEE Transactions on Industrial Informatics, 2026.
+This repository provides the **implementation code** for EPCA and several representative SSVER decoding methods used for comparison, enabling reproducibility of the experimental results reported in the associated paper.
 
 ---
 
@@ -123,7 +123,10 @@ model = MSETRCA(n_neighbor=2, weights_filterbank = weights_filterbank)
 
 model = ETRCA(weights_filterbank=weights_filterbank)
 ```
+### Cite
+If you use any part of the code, please cite the following publication:
 
+- [1] Wang F, Cao F, Yang J, et al. Enhancing Individual Calibration Classification in SSVER Based BCI with Exactly Periodic Component Analysis[J]. IEEE Transactions on Industrial Informatics, 2026.
 
 ### Acknowledgements
 - [1] Nakanishi M, Wang Y, Chen X, et al. Enhancing Detection of SSVEPs for a High-Speed Brain Speller Using Task-Related Component Analysis[J]. IEEE Transactions on Biomedical Engineering, 2018, 65(1): 104-112.[DOI: 10.1109/TBME.2017.2694818](10.1109/TBME.2017.2694818)
