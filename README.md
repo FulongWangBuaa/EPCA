@@ -18,23 +18,19 @@ https://ssvep-analysis-toolbox.readthedocs.io/en/latest/Installation_pages/Insta
 ## 3. Datasets
 The following datasets are used in this study:
 
-- **Benchmark dataset (Dataset I)**
-  [1] Wang Y, Chen X, Gao X, et al. A Benchmark Dataset for SSVEP-Based Brain–Computer Interfaces[J]. IEEE Transactions on Neural Systems and Rehabilitation Engineering, 2017, 25(10): 1746-1752.
+- **Benchmark dataset (Dataset I)**: Wang Y, Chen X, Gao X, et al. A Benchmark Dataset for SSVEP-Based Brain–Computer Interfaces[J]. IEEE Transactions on Neural Systems and Rehabilitation Engineering, 2017, 25(10): 1746-1752.
   
   https://bci.med.tsinghua.edu.cn/download.html
 
-- **BETA dataset (Dataset II)**
-  [2] Liu B, Huang X, Wang Y, et al. BETA: A Large Benchmark Database Toward SSVEP-BCI Application[J]. Frontiers in Neuroscience, 2020, 14.
+- **BETA dataset (Dataset II)**: Liu B, Huang X, Wang Y, et al. BETA: A Large Benchmark Database Toward SSVEP-BCI Application[J]. Frontiers in Neuroscience, 2020, 14.
   
   https://bci.med.tsinghua.edu.cn/download.html
 
-- **eldBETA dataset (Dataset III)**
-  [3] Liu B, Wang Y, Gao X, et al. eldBETA: A Large Eldercare-oriented Benchmark Database of SSVEP-BCI for the Aging Population[J]. Scientific Data, 2022, 9(1): 252.
+- **eldBETA dataset (Dataset III)**: Liu B, Wang Y, Gao X, et al. eldBETA: A Large Eldercare-oriented Benchmark Database of SSVEP-BCI for the Aging Population[J]. Scientific Data, 2022, 9(1): 252.
   
   https://doi.org/10.6084/m9.figshare.18032669
 
-- **GuHF dataset (Dataset IV)**
-  [4] Gu M, Pei W, Gao X, et al. An open dataset for human SSVEPs in the frequency range of 1-60 Hz[J]. Scientific Data, 2024, 11(1): 196.
+- **GuHF dataset (Dataset IV)**: Gu M, Pei W, Gao X, et al. An open dataset for human SSVEPs in the frequency range of 1-60 Hz[J]. Scientific Data, 2024, 11(1): 196.
   
   https://doi.org/10.6084/m9.figshare.23641092
 
